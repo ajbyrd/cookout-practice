@@ -1,3 +1,5 @@
+
+
 const hamburger = {
 	name: 'Hamburger',
 	type: 'beef',
@@ -38,5 +40,8 @@ function grill (currentObject) {
     cookedFood.push(currentObject);
 }; 
 
+for (i = 0; i < foods.length; i++) {
+	grill(foods[i])
+}
 
-console.log(cookedFood)
+console.table(cookedFood)
